@@ -1,0 +1,21 @@
+import React from 'react'
+
+import projectStyles from '.style.module.css'
+import styles from './home.module.css'
+
+const Home = (props) => {
+  return (
+    <div className={styles['container']}>
+      <span className={styles['text']}>
+        <br></br>
+        <span>CLIQUE PARA CONTINUAR</span>
+        <span className={styles['text3']}>&amp;#8203;</span>
+      </span>
+      <button className={` ${styles['button']} ${projectStyles['button']} `}>
+        CONTINUAR
+      </button>
+    </div>
+  )
+}
+
+export default Home
